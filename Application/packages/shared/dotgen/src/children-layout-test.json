@@ -1,0 +1,85 @@
+{
+  "nodes": [
+    {
+      "id": 2,
+      "labelProperty": "UK Independence Party formed",
+      "date": "1993-09-03T07:00:00.000Z",
+      "fy": 500,
+      "fx": 500,
+      "children": [
+        {
+          "id": 23,
+          "labelProperty": "UKIP wins 16% of UK vote in EU parliament",
+          "date": "2004-01-01T00:00:00.000Z",
+          "fy": 155.6775302781328,
+          "fx": 500,
+          "children":[
+            {
+              "id": 24,
+              "labelProperty": "UKIP finishes 2nd in EU parliament elections, partly driven by UK Parliament expense scandal that leads to voter disenchantment with mainstream parties",
+              "date": "2014-11-01T07:00:00.000Z",
+              "fy": -205.58700018258173,
+              "fx": 500,
+              "children":[
+                {
+                  "id": 7,
+                  "labelProperty": "UKIP surges in popularity. Wins seats in UK parliament for the first time. Is awarded 'Major Party Status' by UK regulatory agency (2014)",
+                  "date": "2014-10-01T07:00:00.000Z",
+                  "fy": -202.7569837502282,
+                  "fx": 500,
+                  "children":[
+                    {
+                      "id": 9,
+                      "labelProperty": "To prevent defections to UKIP, Cameron reemphasizes a campaign promise to hold a referendum on leaving the EU if Tories win the 2015 election",
+                      "date": "2015-04-14T07:00:00.000Z",
+                      "fy": -220.55870001825815,
+                      "fx": 500,
+                      "children":[
+                        {
+                          "id": 10,
+                          "labelProperty": "The Tories win a clear majority in the 2015 election. Cameron says he will hold a referendum to leave the EU (Brexit) to fulfill his campaign promise",
+                          "date": "2015-05-07T07:00:00.000Z",
+                          "fy": -222.65838962935914,
+                          "fx": 500,
+                          "children":[
+                            {
+                              "id": 11,
+                              "labelProperty": "Brexit referendum set for June 2016. Campaigns for each side (Leave and Remain are launched)",
+                              "date": "2016-02-22T08:00:00.000Z",
+                              "fy": -249.2278315379466,
+                              "fx": 500,
+                              "children":[
+                                {
+                                  "id": 12,
+                                  "labelProperty": "Majority of British public vote to leave the EU",
+                                  "date": "2016-06-23T07:00:00.000Z",
+                                  "fy": -260.36151177652005,
+                                  "fx": 500,
+                                  "children":[
+                                    {
+                                      "id": 13,
+                                      "labelProperty": "UK files Article 50, beginning the process to leave the European Union (Brexit)",
+                                      "date": "2017-03-29T07:00:00.000Z",
+                                      "fy": -285.8316596677013,
+                                      "fx": 500
+                                    }
+                                  ]
+                                }
+                              ]
+
+                            }
+                          ]
+
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

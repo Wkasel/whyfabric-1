@@ -1,0 +1,1013 @@
+{
+  "options": {
+    "segments": 500,
+    "dot": true,
+    "scale": 1
+  },
+  "theory": {
+    "description": "Theory Test",
+    "voice_note": [],
+    "_id": "71e1eebc-93b6-4e0f-abbd-7c1dcd7c8ff9",
+    "name": "Brexit from CSV Test",
+    "category": "History",
+    "version": 22459530,
+    "createdAt": "2020-08-20T03:20:02.048Z",
+    "updatedAt": "2020-08-20T03:20:02.048Z",
+    "events": [
+      {
+        "id": "70c4e985-8b27-5d6f-b848-c8522fe9f19b",
+        "dateObj": {
+          "date": "2008-09-15T07:00:00.000Z",
+          "day": 15,
+          "month": 9,
+          "year": 2008,
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "offset": 7,
+          "dateUTC": "Mon, 15 Sep 2008 07:00:00 GMT"
+        },
+        "name": "Global Financial Crisis",
+        "label": "9/15/2008",
+        "start": "Global Financial Crisis",
+        "end": "Recession in UK",
+        "startObj": {
+          "text": "Global Financial Crisis",
+          "_id": "70c4e985-8b27-5d6f-b848-c8522fe9f19b"
+        },
+        "endObj": {
+          "text": "Recession in UK",
+          "_id": "8c1b230c-0eea-5331-90ac-9ed5d60f843b"
+        }
+      },
+      {
+        "id": "70c4e985-8b27-5d6f-b848-c8522fe9f19b",
+        "dateObj": {
+          "date": "2008-09-15T07:00:00.000Z",
+          "day": 15,
+          "month": 9,
+          "year": 2008,
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "offset": 7,
+          "dateUTC": "Mon, 15 Sep 2008 07:00:00 GMT"
+        },
+        "name": "Global Financial Crisis",
+        "label": "9/15/2008",
+        "start": "Global Financial Crisis",
+        "end": "Eurozone financial crisis ",
+        "startObj": {
+          "text": "Global Financial Crisis",
+          "_id": "70c4e985-8b27-5d6f-b848-c8522fe9f19b"
+        },
+        "endObj": {
+          "text": "Eurozone financial crisis ",
+          "_id": "938a8516-8bce-5260-a7fe-740efda94315"
+        }
+      },
+      {
+        "id": "728227f1-07a2-53b1-baa9-d93a21025604",
+        "dateObj": {
+          "date": "1993-09-03T07:00:00.000Z",
+          "day": 3,
+          "month": 9,
+          "year": 1993,
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "offset": 7,
+          "dateUTC": "Fri, 03 Sep 1993 07:00:00 GMT"
+        },
+        "name": "UK Independence Party formed",
+        "label": "9/3/1993",
+        "start": "UK Independence Party formed",
+        "end": "UKIP wins 16% of UK vote in EU parliament ",
+        "startObj": {
+          "text": "UK Independence Party formed",
+          "_id": "728227f1-07a2-53b1-baa9-d93a21025604"
+        },
+        "endObj": {
+          "text": "UKIP wins 16% of UK vote in EU parliament ",
+          "_id": "ce2ed052-e226-505a-8a18-19b9e0949dad"
+        }
+      },
+      {
+        "id": "02c04fb1-c5ec-5aaf-b6ab-b03891da65fa",
+        "dateObj": {
+          "date": "2010-12-18T08:00:00.000Z",
+          "day": 18,
+          "month": 12,
+          "year": 2010,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Sat, 18 Dec 2010 08:00:00 GMT"
+        },
+        "name": "Arab Spring",
+        "label": "12/18/2010",
+        "start": "Arab Spring",
+        "end": "Syrian refugee crisis. Millions cross into Turkey and many march towards Northern Europe",
+        "startObj": {
+          "text": "Arab Spring",
+          "_id": "02c04fb1-c5ec-5aaf-b6ab-b03891da65fa"
+        },
+        "endObj": {
+          "text": "Syrian refugee crisis. Millions cross into Turkey and many march towards Northern Europe",
+          "_id": "1b03e137-a965-5f76-ad62-3976af5e29ec"
+        }
+      },
+      {
+        "id": "4e86a3d0-ad98-5ba5-89ea-5e463dfc8f2a",
+        "dateObj": {
+          "date": "2013-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2013,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Tue, 01 Jan 2013 08:00:00 GMT"
+        },
+        "name": "Growing anger amongst a British public struggling with govt. cuts and loss of jobs",
+        "label": "2013",
+        "start": "Growing anger amongst a British public struggling with govt. cuts and loss of jobs",
+        "end": "Top Tory leaders Boris Johnson and Michael Gove throw their support behind Leave campaign",
+        "startObj": {
+          "text": "Growing anger amongst a British public struggling with govt. cuts and loss of jobs",
+          "_id": "4e86a3d0-ad98-5ba5-89ea-5e463dfc8f2a"
+        },
+        "endObj": {
+          "text": "Top Tory leaders Boris Johnson and Michael Gove throw their support behind Leave campaign",
+          "_id": "94319864-6003-5d9c-a010-3ca959d79a29"
+        }
+      },
+      {
+        "id": "4e86a3d0-ad98-5ba5-89ea-5e463dfc8f2a",
+        "dateObj": {
+          "date": "2013-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2013,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Tue, 01 Jan 2013 08:00:00 GMT"
+        },
+        "name": "Growing anger amongst a British public struggling with govt. cuts and loss of jobs",
+        "label": "2013",
+        "start": "Growing anger amongst a British public struggling with govt. cuts and loss of jobs",
+        "end": "Leave campaign conducts a hyper-targeted marketing campaign",
+        "startObj": {
+          "text": "Growing anger amongst a British public struggling with govt. cuts and loss of jobs",
+          "_id": "4e86a3d0-ad98-5ba5-89ea-5e463dfc8f2a"
+        },
+        "endObj": {
+          "text": "Leave campaign conducts a hyper-targeted marketing campaign",
+          "_id": "fab16199-a3c9-5942-8ad1-6e761de38d38"
+        }
+      },
+      {
+        "id": "4e86a3d0-ad98-5ba5-89ea-5e463dfc8f2a",
+        "dateObj": {
+          "date": "2013-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2013,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Tue, 01 Jan 2013 08:00:00 GMT"
+        },
+        "name": "Growing anger amongst a British public struggling with govt. cuts and loss of jobs",
+        "label": "2013",
+        "start": "Growing anger amongst a British public struggling with govt. cuts and loss of jobs",
+        "end": "UKIP surges in popularity. Wins seats in UK parliament for the first time. Is awarded 'Major Party Status' by UK regulatory agency (2014)",
+        "startObj": {
+          "text": "Growing anger amongst a British public struggling with govt. cuts and loss of jobs",
+          "_id": "4e86a3d0-ad98-5ba5-89ea-5e463dfc8f2a"
+        },
+        "endObj": {
+          "text": "UKIP surges in popularity. Wins seats in UK parliament for the first time. Is awarded 'Major Party Status' by UK regulatory agency (2014)",
+          "_id": "fa5cf9f9-cbbd-5447-82b3-ff794d840773"
+        }
+      },
+      {
+        "id": "1b03e137-a965-5f76-ad62-3976af5e29ec",
+        "dateObj": {
+          "date": "2015-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2015,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Thu, 01 Jan 2015 08:00:00 GMT"
+        },
+        "name": "Syrian refugee crisis. Millions cross into Turkey and many march towards Northern Europe",
+        "label": "2015",
+        "start": "Syrian refugee crisis. Millions cross into Turkey and many march towards Northern Europe",
+        "end": "Turkey revives talks to join EU in exchange for housing migrants",
+        "startObj": {
+          "text": "Syrian refugee crisis. Millions cross into Turkey and many march towards Northern Europe",
+          "_id": "1b03e137-a965-5f76-ad62-3976af5e29ec"
+        },
+        "endObj": {
+          "text": "Turkey revives talks to join EU in exchange for housing migrants",
+          "_id": "929a212e-af5b-59a8-8f6f-33805202444f"
+        }
+      },
+      {
+        "id": "1b03e137-a965-5f76-ad62-3976af5e29ec",
+        "dateObj": {
+          "date": "2015-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2015,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Thu, 01 Jan 2015 08:00:00 GMT"
+        },
+        "name": "Syrian refugee crisis. Millions cross into Turkey and many march towards Northern Europe",
+        "label": "2015",
+        "start": "Syrian refugee crisis. Millions cross into Turkey and many march towards Northern Europe",
+        "end": "Terrorist attack in Paris by Islamic militants who came as refugees ",
+        "startObj": {
+          "text": "Syrian refugee crisis. Millions cross into Turkey and many march towards Northern Europe",
+          "_id": "1b03e137-a965-5f76-ad62-3976af5e29ec"
+        },
+        "endObj": {
+          "text": "Terrorist attack in Paris by Islamic militants who came as refugees ",
+          "_id": "09ddef64-2c4f-5ff3-9605-18da2251bf51"
+        }
+      },
+      {
+        "id": "900abd27-3ac1-5f7b-b85a-ff796fc2de88",
+        "dateObj": {
+          "date": "2016-05-01T07:00:00.000Z",
+          "day": 1,
+          "month": 5,
+          "year": 2016,
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "offset": 7,
+          "dateUTC": "Sun, 01 May 2016 07:00:00 GMT"
+        },
+        "name": "UKIP campaign exploits Paris terrorist attacks, influx of migrants to Europe and Turkey/EU membership discussions to stoke fears about immigration",
+        "label": "5/2016",
+        "start": "UKIP campaign exploits Paris terrorist attacks, influx of migrants to Europe and Turkey/EU membership discussions to stoke fears about immigration",
+        "end": "Majority of British public vote to leave the EU",
+        "startObj": {
+          "text": "UKIP campaign exploits Paris terrorist attacks, influx of migrants to Europe and Turkey/EU membership discussions to stoke fears about immigration",
+          "_id": "900abd27-3ac1-5f7b-b85a-ff796fc2de88"
+        },
+        "endObj": {
+          "text": "Majority of British public vote to leave the EU",
+          "_id": "60f42ad1-5294-5279-8dde-f07b8fb368c9"
+        }
+      },
+      {
+        "id": "fa5cf9f9-cbbd-5447-82b3-ff794d840773",
+        "dateObj": {
+          "date": "2014-10-01T07:00:00.000Z",
+          "day": 1,
+          "month": 10,
+          "year": 2014,
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "offset": 7,
+          "dateUTC": "Wed, 01 Oct 2014 07:00:00 GMT"
+        },
+        "name": "UKIP surges in popularity. Wins seats in UK parliament for the first time. Is awarded 'Major Party Status' by UK regulatory agency (2014)",
+        "label": "10/2014",
+        "start": "UKIP surges in popularity. Wins seats in UK parliament for the first time. Is awarded 'Major Party Status' by UK regulatory agency (2014)",
+        "end": "Tory party fears UKIP will suck up euroskeptic voters and allow Labor to win 2015 election",
+        "startObj": {
+          "text": "UKIP surges in popularity. Wins seats in UK parliament for the first time. Is awarded 'Major Party Status' by UK regulatory agency (2014)",
+          "_id": "fa5cf9f9-cbbd-5447-82b3-ff794d840773"
+        },
+        "endObj": {
+          "text": "Tory party fears UKIP will suck up euroskeptic voters and allow Labor to win 2015 election",
+          "_id": "8018e54e-e5e7-57bc-90a0-998f498dd260"
+        }
+      },
+      {
+        "id": "8018e54e-e5e7-57bc-90a0-998f498dd260",
+        "dateObj": {
+          "date": "2014-12-01T08:00:00.000Z",
+          "day": 1,
+          "month": 12,
+          "year": 2014,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Wed, 01 Dec 2014 08:00:00 GMT"
+        },
+        "name": "Tory party fears UKIP will suck up euroskeptic voters and allow Labor to win 2015 election",
+        "label": "2014",
+        "start": "Tory party fears UKIP will suck up euroskeptic voters and allow Labor to win 2015 election",
+        "end": "To prevent defections to UKIP, Cameron reemphasizes a campaign promise to hold a referendum on leaving the EU if Tories win the 2015 election",
+        "startObj": {
+          "text": "Tory party fears UKIP will suck up euroskeptic voters and allow Labor to win 2015 election",
+          "_id": "8018e54e-e5e7-57bc-90a0-998f498dd260"
+        },
+        "endObj": {
+          "text": "To prevent defections to UKIP, Cameron reemphasizes a campaign promise to hold a referendum on leaving the EU if Tories win the 2015 election",
+          "_id": "45adf7e6-682e-5a73-96e0-2f32eaa62d3b"
+        }
+      },
+      {
+        "id": "45adf7e6-682e-5a73-96e0-2f32eaa62d3b",
+        "dateObj": {
+          "date": "2015-04-14T07:00:00.000Z",
+          "day": 14,
+          "month": 4,
+          "year": 2015,
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "offset": 7,
+          "dateUTC": "Tue, 14 Apr 2015 07:00:00 GMT"
+        },
+        "name": "To prevent defections to UKIP, Cameron reemphasizes a campaign promise to hold a referendum on leaving the EU if Tories win the 2015 election",
+        "label": "4/14/2015",
+        "start": "To prevent defections to UKIP, Cameron reemphasizes a campaign promise to hold a referendum on leaving the EU if Tories win the 2015 election",
+        "end": "The Tories win a clear majority in the 2015 election. Cameron says he will hold a referendum to leave the EU (Brexit) to fulfill his campaign promise",
+        "startObj": {
+          "text": "To prevent defections to UKIP, Cameron reemphasizes a campaign promise to hold a referendum on leaving the EU if Tories win the 2015 election",
+          "_id": "45adf7e6-682e-5a73-96e0-2f32eaa62d3b"
+        },
+        "endObj": {
+          "text": "The Tories win a clear majority in the 2015 election. Cameron says he will hold a referendum to leave the EU (Brexit) to fulfill his campaign promise",
+          "_id": "28b83582-961a-52ed-bcef-dc022b21d0fb"
+        }
+      },
+      {
+        "id": "28b83582-961a-52ed-bcef-dc022b21d0fb",
+        "dateObj": {
+          "date": "2015-05-07T07:00:00.000Z",
+          "day": 7,
+          "month": 5,
+          "year": 2015,
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "offset": 7,
+          "dateUTC": "Thu, 07 May 2015 07:00:00 GMT"
+        },
+        "name": "The Tories win a clear majority in the 2015 election. Cameron says he will hold a referendum to leave the EU (Brexit) to fulfill his campaign promise",
+        "label": "5/7/2015",
+        "start": "The Tories win a clear majority in the 2015 election. Cameron says he will hold a referendum to leave the EU (Brexit) to fulfill his campaign promise",
+        "end": "Brexit referendum set for June 2016. Campaigns for each side (Leave and Remain are launched)",
+        "startObj": {
+          "text": "The Tories win a clear majority in the 2015 election. Cameron says he will hold a referendum to leave the EU (Brexit) to fulfill his campaign promise",
+          "_id": "28b83582-961a-52ed-bcef-dc022b21d0fb"
+        },
+        "endObj": {
+          "text": "Brexit referendum set for June 2016. Campaigns for each side (Leave and Remain are launched)",
+          "_id": "ae103e7b-676d-5b3d-9eb2-c0f69f43c63b"
+        }
+      },
+      {
+        "id": "ae103e7b-676d-5b3d-9eb2-c0f69f43c63b",
+        "dateObj": {
+          "date": "2016-02-22T08:00:00.000Z",
+          "day": 22,
+          "month": 2,
+          "year": 2016,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Mon, 22 Feb 2016 08:00:00 GMT"
+        },
+        "name": "Brexit referendum set for June 2016. Campaigns for each side (Leave and Remain are launched)",
+        "label": "2/22/2016",
+        "start": "Brexit referendum set for June 2016. Campaigns for each side (Leave and Remain are launched)",
+        "end": "Majority of British public vote to leave the EU",
+        "startObj": {
+          "text": "Brexit referendum set for June 2016. Campaigns for each side (Leave and Remain are launched)",
+          "_id": "ae103e7b-676d-5b3d-9eb2-c0f69f43c63b"
+        },
+        "endObj": {
+          "text": "Majority of British public vote to leave the EU",
+          "_id": "60f42ad1-5294-5279-8dde-f07b8fb368c9"
+        }
+      },
+      {
+        "id": "60f42ad1-5294-5279-8dde-f07b8fb368c9",
+        "dateObj": {
+          "date": "2016-06-23T07:00:00.000Z",
+          "day": 23,
+          "month": 6,
+          "year": 2016,
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "offset": 7,
+          "dateUTC": "Thu, 23 Jun 2016 07:00:00 GMT"
+        },
+        "name": "Majority of British public vote to leave the EU",
+        "label": "6/23/2016",
+        "start": "Majority of British public vote to leave the EU",
+        "end": "UK files Article 50, beginning the process to leave the European Union (Brexit)",
+        "startObj": {
+          "text": "Majority of British public vote to leave the EU",
+          "_id": "60f42ad1-5294-5279-8dde-f07b8fb368c9"
+        },
+        "endObj": {
+          "text": "UK files Article 50, beginning the process to leave the European Union (Brexit)",
+          "_id": "d85640ea-b2f2-51d1-8dda-5858c1b79753"
+        }
+      },
+      {
+        "id": "d85640ea-b2f2-51d1-8dda-5858c1b79753",
+        "dateObj": {
+          "date": "2017-03-29T07:00:00.000Z",
+          "day": 29,
+          "month": 3,
+          "year": 2017,
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "offset": 7,
+          "dateUTC": "Wed, 29 Mar 2017 07:00:00 GMT"
+        },
+        "name": "UK files Article 50, beginning the process to leave the European Union (Brexit)",
+        "label": "3/29/2017",
+        "start": "UK files Article 50, beginning the process to leave the European Union (Brexit)",
+        "end": "",
+        "startObj": {
+          "text": "UK files Article 50, beginning the process to leave the European Union (Brexit)",
+          "_id": "d85640ea-b2f2-51d1-8dda-5858c1b79753"
+        },
+        "endObj": {
+          "text": "",
+          "_id": "4ebd0208-8328-5d69-8c44-ec50939c0967"
+        }
+      },
+      {
+        "id": "8c1b230c-0eea-5331-90ac-9ed5d60f843b",
+        "dateObj": {
+          "date": "2009-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2009,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Thu, 01 Jan 2009 08:00:00 GMT"
+        },
+        "name": "Recession in UK",
+        "label": "2009",
+        "start": "Recession in UK",
+        "end": "Austerity measures introduced in UK (budget cuts, tax increases)",
+        "startObj": {
+          "text": "Recession in UK",
+          "_id": "8c1b230c-0eea-5331-90ac-9ed5d60f843b"
+        },
+        "endObj": {
+          "text": "Austerity measures introduced in UK (budget cuts, tax increases)",
+          "_id": "18492647-d960-5879-ba69-146966ad13cb"
+        }
+      },
+      {
+        "id": "18492647-d960-5879-ba69-146966ad13cb",
+        "dateObj": {
+          "date": "2010-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2010,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Fri, 01 Jan 2010 08:00:00 GMT"
+        },
+        "name": "Austerity measures introduced in UK (budget cuts, tax increases)",
+        "label": "2010",
+        "start": "Austerity measures introduced in UK (budget cuts, tax increases)",
+        "end": "Growing anger amongst a British public struggling with govt. cuts and loss of jobs",
+        "startObj": {
+          "text": "Austerity measures introduced in UK (budget cuts, tax increases)",
+          "_id": "18492647-d960-5879-ba69-146966ad13cb"
+        },
+        "endObj": {
+          "text": "Growing anger amongst a British public struggling with govt. cuts and loss of jobs",
+          "_id": "4e86a3d0-ad98-5ba5-89ea-5e463dfc8f2a"
+        }
+      },
+      {
+        "id": "938a8516-8bce-5260-a7fe-740efda94315",
+        "dateObj": {
+          "date": "2011-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2011,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Sat, 01 Jan 2011 08:00:00 GMT"
+        },
+        "name": "Eurozone financial crisis ",
+        "label": "2011",
+        "start": "Eurozone financial crisis ",
+        "end": "Surge in migration to UK from EU countries in economic distress",
+        "startObj": {
+          "text": "Eurozone financial crisis ",
+          "_id": "938a8516-8bce-5260-a7fe-740efda94315"
+        },
+        "endObj": {
+          "text": "Surge in migration to UK from EU countries in economic distress",
+          "_id": "c13254a0-ea0f-5ffd-a1e1-5bf3272c8a0a"
+        }
+      },
+      {
+        "id": "938a8516-8bce-5260-a7fe-740efda94315",
+        "dateObj": {
+          "date": "2011-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2011,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Sat, 01 Jan 2011 08:00:00 GMT"
+        },
+        "name": "Eurozone financial crisis ",
+        "label": "2011",
+        "start": "Eurozone financial crisis ",
+        "end": "Increasing view by UK public that Europe is an economic mess",
+        "startObj": {
+          "text": "Eurozone financial crisis ",
+          "_id": "938a8516-8bce-5260-a7fe-740efda94315"
+        },
+        "endObj": {
+          "text": "Increasing view by UK public that Europe is an economic mess",
+          "_id": "7eb9b927-083e-5892-bdfb-b8a58a7eccb9"
+        }
+      },
+      {
+        "id": "c13254a0-ea0f-5ffd-a1e1-5bf3272c8a0a",
+        "dateObj": {
+          "date": "2012-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2012,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Sun, 01 Jan 2012 08:00:00 GMT"
+        },
+        "name": "Surge in migration to UK from EU countries in economic distress",
+        "label": "2012",
+        "start": "Surge in migration to UK from EU countries in economic distress",
+        "end": "Growing anger amongst a British public struggling with govt. cuts and loss of jobs",
+        "startObj": {
+          "text": "Surge in migration to UK from EU countries in economic distress",
+          "_id": "c13254a0-ea0f-5ffd-a1e1-5bf3272c8a0a"
+        },
+        "endObj": {
+          "text": "Growing anger amongst a British public struggling with govt. cuts and loss of jobs",
+          "_id": "4e86a3d0-ad98-5ba5-89ea-5e463dfc8f2a"
+        }
+      },
+      {
+        "id": "c13254a0-ea0f-5ffd-a1e1-5bf3272c8a0a",
+        "dateObj": {
+          "date": "2012-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2012,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Sun, 01 Jan 2012 08:00:00 GMT"
+        },
+        "name": "Surge in migration to UK from EU countries in economic distress",
+        "label": "2012",
+        "start": "Surge in migration to UK from EU countries in economic distress",
+        "end": "UKIP surges in popularity. Wins seats in UK parliament for the first time. Is awarded 'Major Party Status' by UK regulatory agency (2014)",
+        "startObj": {
+          "text": "Surge in migration to UK from EU countries in economic distress",
+          "_id": "c13254a0-ea0f-5ffd-a1e1-5bf3272c8a0a"
+        },
+        "endObj": {
+          "text": "UKIP surges in popularity. Wins seats in UK parliament for the first time. Is awarded 'Major Party Status' by UK regulatory agency (2014)",
+          "_id": "fa5cf9f9-cbbd-5447-82b3-ff794d840773"
+        }
+      },
+      {
+        "id": "929a212e-af5b-59a8-8f6f-33805202444f",
+        "dateObj": {
+          "date": "2015-12-01T08:00:00.000Z",
+          "day": 1,
+          "month": 12,
+          "year": 2015,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Tue, 01 Dec 2015 08:00:00 GMT"
+        },
+        "name": "Turkey revives talks to join EU in exchange for housing migrants",
+        "label": "12/2015",
+        "start": "Turkey revives talks to join EU in exchange for housing migrants",
+        "end": "UKIP campaign exploits Paris terrorist attacks, influx of migrants to Europe and Turkey/EU membership discussions to stoke fears about immigration",
+        "startObj": {
+          "text": "Turkey revives talks to join EU in exchange for housing migrants",
+          "_id": "929a212e-af5b-59a8-8f6f-33805202444f"
+        },
+        "endObj": {
+          "text": "UKIP campaign exploits Paris terrorist attacks, influx of migrants to Europe and Turkey/EU membership discussions to stoke fears about immigration",
+          "_id": "900abd27-3ac1-5f7b-b85a-ff796fc2de88"
+        }
+      },
+      {
+        "id": "94319864-6003-5d9c-a010-3ca959d79a29",
+        "dateObj": {
+          "date": "2016-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2016,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Fri, 01 Jan 2016 08:00:00 GMT"
+        },
+        "name": "Top Tory leaders Boris Johnson and Michael Gove throw their support behind Leave campaign",
+        "label": "2016",
+        "start": "Top Tory leaders Boris Johnson and Michael Gove throw their support behind Leave campaign",
+        "end": "Majority of British public vote to leave the EU",
+        "startObj": {
+          "text": "Top Tory leaders Boris Johnson and Michael Gove throw their support behind Leave campaign",
+          "_id": "94319864-6003-5d9c-a010-3ca959d79a29"
+        },
+        "endObj": {
+          "text": "Majority of British public vote to leave the EU",
+          "_id": "60f42ad1-5294-5279-8dde-f07b8fb368c9"
+        }
+      },
+      {
+        "id": "fab16199-a3c9-5942-8ad1-6e761de38d38",
+        "dateObj": {
+          "date": "2016-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2016,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Fri, 01 Jan 2016 08:00:00 GMT"
+        },
+        "name": "Leave campaign conducts a hyper-targeted marketing campaign",
+        "label": "2016",
+        "start": "Leave campaign conducts a hyper-targeted marketing campaign",
+        "end": "Majority of British public vote to leave the EU",
+        "startObj": {
+          "text": "Leave campaign conducts a hyper-targeted marketing campaign",
+          "_id": "fab16199-a3c9-5942-8ad1-6e761de38d38"
+        },
+        "endObj": {
+          "text": "Majority of British public vote to leave the EU",
+          "_id": "60f42ad1-5294-5279-8dde-f07b8fb368c9"
+        }
+      },
+      {
+        "id": "09ddef64-2c4f-5ff3-9605-18da2251bf51",
+        "dateObj": {
+          "date": "2015-11-01T07:00:00.000Z",
+          "day": 1,
+          "month": 11,
+          "year": 2015,
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "offset": 7,
+          "dateUTC": "Sun, 01 Nov 2015 07:00:00 GMT"
+        },
+        "name": "Terrorist attack in Paris by Islamic militants who came as refugees ",
+        "label": "11/2015",
+        "start": "Terrorist attack in Paris by Islamic militants who came as refugees ",
+        "end": "UKIP campaign exploits Paris terrorist attacks, influx of migrants to Europe and Turkey/EU membership discussions to stoke fears about immigration",
+        "startObj": {
+          "text": "Terrorist attack in Paris by Islamic militants who came as refugees ",
+          "_id": "09ddef64-2c4f-5ff3-9605-18da2251bf51"
+        },
+        "endObj": {
+          "text": "UKIP campaign exploits Paris terrorist attacks, influx of migrants to Europe and Turkey/EU membership discussions to stoke fears about immigration",
+          "_id": "900abd27-3ac1-5f7b-b85a-ff796fc2de88"
+        }
+      },
+      {
+        "id": "7eb9b927-083e-5892-bdfb-b8a58a7eccb9",
+        "dateObj": {
+          "date": "2012-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2012,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Sun, 01 Jan 2012 08:00:00 GMT"
+        },
+        "name": "Increasing view by UK public that Europe is an economic mess",
+        "label": "2012",
+        "start": "Increasing view by UK public that Europe is an economic mess",
+        "end": "UKIP surges in popularity. Wins seats in UK parliament for the first time. Is awarded 'Major Party Status' by UK regulatory agency (2014)",
+        "startObj": {
+          "text": "Increasing view by UK public that Europe is an economic mess",
+          "_id": "7eb9b927-083e-5892-bdfb-b8a58a7eccb9"
+        },
+        "endObj": {
+          "text": "UKIP surges in popularity. Wins seats in UK parliament for the first time. Is awarded 'Major Party Status' by UK regulatory agency (2014)",
+          "_id": "fa5cf9f9-cbbd-5447-82b3-ff794d840773"
+        }
+      },
+      {
+        "id": "ce2ed052-e226-505a-8a18-19b9e0949dad",
+        "dateObj": {
+          "date": "2004-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2004,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Thu, 01 Jan 2004 08:00:00 GMT"
+        },
+        "name": "UKIP wins 16% of UK vote in EU parliament ",
+        "label": "2004",
+        "start": "UKIP wins 16% of UK vote in EU parliament ",
+        "end": "UKIP finishes 2nd in EU parliament elections, partly driven by UK Parliament expense scandal that leads to voter disenchantment with mainstream parties",
+        "startObj": {
+          "text": "UKIP wins 16% of UK vote in EU parliament ",
+          "_id": "ce2ed052-e226-505a-8a18-19b9e0949dad"
+        },
+        "endObj": {
+          "text": "UKIP finishes 2nd in EU parliament elections, partly driven by UK Parliament expense scandal that leads to voter disenchantment with mainstream parties",
+          "_id": "343d373e-fe03-51eb-ace3-ab42699105b8"
+        }
+      },
+      {
+        "id": "343d373e-fe03-51eb-ace3-ab42699105b8",
+        "dateObj": {
+          "date": "2014-11-02T07:00:00.000Z",
+          "day": 2,
+          "month": 11,
+          "year": 2014,
+          "hour": 7,
+          "minute": 0,
+          "second": 0,
+          "offset": 7,
+          "dateUTC": "Sun, 02 Nov 2014 07:00:00 GMT"
+        },
+        "name": "UKIP finishes 2nd in EU parliament elections, partly driven by UK Parliament expense scandal that leads to voter disenchantment with mainstream parties",
+        "label": "11/2014",
+        "start": "UKIP finishes 2nd in EU parliament elections, partly driven by UK Parliament expense scandal that leads to voter disenchantment with mainstream parties",
+        "end": "UKIP surges in popularity. Wins seats in UK parliament for the first time. Is awarded 'Major Party Status' by UK regulatory agency (2014)",
+        "startObj": {
+          "text": "UKIP finishes 2nd in EU parliament elections, partly driven by UK Parliament expense scandal that leads to voter disenchantment with mainstream parties",
+          "_id": "343d373e-fe03-51eb-ace3-ab42699105b8"
+        },
+        "endObj": {
+          "text": "UKIP surges in popularity. Wins seats in UK parliament for the first time. Is awarded 'Major Party Status' by UK regulatory agency (2014)",
+          "_id": "fa5cf9f9-cbbd-5447-82b3-ff794d840773"
+        }
+      },
+      {
+        "id": "270177e1-4f44-5f25-809f-22f0ff06c5b5",
+        "dateObj": {
+          "date": "2010-01-01T08:00:00.000Z",
+          "day": 1,
+          "month": 1,
+          "year": 2010,
+          "hour": 8,
+          "minute": 0,
+          "second": 0,
+          "offset": 8,
+          "dateUTC": "Fri, 01 Jan 2010 08:00:00 GMT"
+        },
+        "name": "Conservatives and Liberal Democrats form a coalition government, replacing Labor\n2010. Cameron becomes Prime Minister",
+        "label": "2010",
+        "start": "Conservatives and Liberal Democrats form a coalition government, replacing Labor\n2010. Cameron becomes Prime Minister",
+        "end": "To prevent defections to UKIP, Cameron reemphasizes a campaign promise to hold a referendum on leaving the EU if Tories win the 2015 election",
+        "startObj": {
+          "text": "Conservatives and Liberal Democrats form a coalition government, replacing Labor\n2010. Cameron becomes Prime Minister",
+          "_id": "270177e1-4f44-5f25-809f-22f0ff06c5b5"
+        },
+        "endObj": {
+          "text": "To prevent defections to UKIP, Cameron reemphasizes a campaign promise to hold a referendum on leaving the EU if Tories win the 2015 election",
+          "_id": "45adf7e6-682e-5a73-96e0-2f32eaa62d3b"
+        }
+      }
+    ],
+    "connections": [
+      {
+        "data": {
+          "source": "70c4e985-8b27-5d6f-b848-c8522fe9f19b",
+          "target": "8c1b230c-0eea-5331-90ac-9ed5d60f843b"
+        }
+      },
+      {
+        "data": {
+          "source": "70c4e985-8b27-5d6f-b848-c8522fe9f19b",
+          "target": "938a8516-8bce-5260-a7fe-740efda94315"
+        }
+      },
+      {
+        "data": {
+          "source": "728227f1-07a2-53b1-baa9-d93a21025604",
+          "target": "ce2ed052-e226-505a-8a18-19b9e0949dad"
+        }
+      },
+      {
+        "data": {
+          "source": "02c04fb1-c5ec-5aaf-b6ab-b03891da65fa",
+          "target": "1b03e137-a965-5f76-ad62-3976af5e29ec"
+        }
+      },
+      {
+        "data": {
+          "source": "4e86a3d0-ad98-5ba5-89ea-5e463dfc8f2a",
+          "target": "94319864-6003-5d9c-a010-3ca959d79a29"
+        }
+      },
+      {
+        "data": {
+          "source": "4e86a3d0-ad98-5ba5-89ea-5e463dfc8f2a",
+          "target": "fab16199-a3c9-5942-8ad1-6e761de38d38"
+        }
+      },
+      {
+        "data": {
+          "source": "4e86a3d0-ad98-5ba5-89ea-5e463dfc8f2a",
+          "target": "fa5cf9f9-cbbd-5447-82b3-ff794d840773"
+        }
+      },
+      {
+        "data": {
+          "source": "1b03e137-a965-5f76-ad62-3976af5e29ec",
+          "target": "929a212e-af5b-59a8-8f6f-33805202444f"
+        }
+      },
+      {
+        "data": {
+          "source": "1b03e137-a965-5f76-ad62-3976af5e29ec",
+          "target": "09ddef64-2c4f-5ff3-9605-18da2251bf51"
+        }
+      },
+      {
+        "data": {
+          "source": "900abd27-3ac1-5f7b-b85a-ff796fc2de88",
+          "target": "60f42ad1-5294-5279-8dde-f07b8fb368c9"
+        }
+      },
+      {
+        "data": {
+          "source": "fa5cf9f9-cbbd-5447-82b3-ff794d840773",
+          "target": "8018e54e-e5e7-57bc-90a0-998f498dd260"
+        }
+      },
+      {
+        "data": {
+          "source": "8018e54e-e5e7-57bc-90a0-998f498dd260",
+          "target": "45adf7e6-682e-5a73-96e0-2f32eaa62d3b"
+        }
+      },
+      {
+        "data": {
+          "source": "45adf7e6-682e-5a73-96e0-2f32eaa62d3b",
+          "target": "28b83582-961a-52ed-bcef-dc022b21d0fb"
+        }
+      },
+      {
+        "data": {
+          "source": "28b83582-961a-52ed-bcef-dc022b21d0fb",
+          "target": "ae103e7b-676d-5b3d-9eb2-c0f69f43c63b"
+        }
+      },
+      {
+        "data": {
+          "source": "ae103e7b-676d-5b3d-9eb2-c0f69f43c63b",
+          "target": "60f42ad1-5294-5279-8dde-f07b8fb368c9"
+        }
+      },
+      {
+        "data": {
+          "source": "60f42ad1-5294-5279-8dde-f07b8fb368c9",
+          "target": "d85640ea-b2f2-51d1-8dda-5858c1b79753"
+        }
+      },
+      {
+        "data": {
+          "source": "d85640ea-b2f2-51d1-8dda-5858c1b79753",
+          "target": "4ebd0208-8328-5d69-8c44-ec50939c0967"
+        }
+      },
+      {
+        "data": {
+          "source": "8c1b230c-0eea-5331-90ac-9ed5d60f843b",
+          "target": "18492647-d960-5879-ba69-146966ad13cb"
+        }
+      },
+      {
+        "data": {
+          "source": "18492647-d960-5879-ba69-146966ad13cb",
+          "target": "4e86a3d0-ad98-5ba5-89ea-5e463dfc8f2a"
+        }
+      },
+      {
+        "data": {
+          "source": "938a8516-8bce-5260-a7fe-740efda94315",
+          "target": "c13254a0-ea0f-5ffd-a1e1-5bf3272c8a0a"
+        }
+      },
+      {
+        "data": {
+          "source": "938a8516-8bce-5260-a7fe-740efda94315",
+          "target": "7eb9b927-083e-5892-bdfb-b8a58a7eccb9"
+        }
+      },
+      {
+        "data": {
+          "source": "c13254a0-ea0f-5ffd-a1e1-5bf3272c8a0a",
+          "target": "4e86a3d0-ad98-5ba5-89ea-5e463dfc8f2a"
+        }
+      },
+      {
+        "data": {
+          "source": "c13254a0-ea0f-5ffd-a1e1-5bf3272c8a0a",
+          "target": "fa5cf9f9-cbbd-5447-82b3-ff794d840773"
+        }
+      },
+      {
+        "data": {
+          "source": "929a212e-af5b-59a8-8f6f-33805202444f",
+          "target": "900abd27-3ac1-5f7b-b85a-ff796fc2de88"
+        }
+      },
+      {
+        "data": {
+          "source": "94319864-6003-5d9c-a010-3ca959d79a29",
+          "target": "60f42ad1-5294-5279-8dde-f07b8fb368c9"
+        }
+      },
+      {
+        "data": {
+          "source": "fab16199-a3c9-5942-8ad1-6e761de38d38",
+          "target": "60f42ad1-5294-5279-8dde-f07b8fb368c9"
+        }
+      },
+      {
+        "data": {
+          "source": "09ddef64-2c4f-5ff3-9605-18da2251bf51",
+          "target": "900abd27-3ac1-5f7b-b85a-ff796fc2de88"
+        }
+      },
+      {
+        "data": {
+          "source": "7eb9b927-083e-5892-bdfb-b8a58a7eccb9",
+          "target": "fa5cf9f9-cbbd-5447-82b3-ff794d840773"
+        }
+      },
+      {
+        "data": {
+          "source": "ce2ed052-e226-505a-8a18-19b9e0949dad",
+          "target": "343d373e-fe03-51eb-ace3-ab42699105b8"
+        }
+      },
+      {
+        "data": {
+          "source": "343d373e-fe03-51eb-ace3-ab42699105b8",
+          "target": "fa5cf9f9-cbbd-5447-82b3-ff794d840773"
+        }
+      },
+      {
+        "data": {
+          "source": "270177e1-4f44-5f25-809f-22f0ff06c5b5",
+          "target": "45adf7e6-682e-5a73-96e0-2f32eaa62d3b"
+        }
+      }
+    ]
+  }
+}

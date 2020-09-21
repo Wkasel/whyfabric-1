@@ -1,0 +1,21 @@
+{
+  "name": "WhyFabric",
+  "environments": ["localdev", "development", "staging", "production"],
+  "secrets": "./Application/config",
+  "appsRoot": "./Application",
+  "apps": [
+    {
+      "name": "webapp",
+      "type": "container",
+      "path": "webapp",
+      "envs": {
+        "development": {
+          "dockerfile": "Dockerfile.localdev",
+          "imageName": "whyfabric-webapp-dev",
+          "port": 3000,
+          "portmapping": "3000:3000"
+        }
+      }
+    }
+  ]
+}

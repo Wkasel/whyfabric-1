@@ -1,0 +1,112 @@
+{
+  "nodes": [
+    {
+      "id": "1",
+      "labelProperty": "1973 Oil Price Shock",
+      "date": "1/1/1973",
+      "width": 150,
+      "height": 150,
+      "fx": 60,
+      "fy": 940
+    },
+    {
+      "id": "3",
+      "labelProperty": "1971: Nixon Abandons Bretton Woods Gold standard",
+      "date": "1/1/1971",
+      "width": 150,
+      "height": 150,
+      "fx": 140,
+      "fy": 980
+    },
+    {
+      "id": "4",
+      "labelProperty": "Monetary Instability",
+      "date": "1/1/1978",
+      "fx": 140,
+      "fy": 900
+    },
+    {
+      "id": "5",
+      "labelProperty": "Volcker Increases interest rates dramatically to get inflation under control.",
+      "date": "1/1/1980",
+      "fx": 140,
+      "fy": 840
+    },
+    {
+      "id": "6",
+      "labelProperty": "tension in financial system driven by imbalence of legacy and post Volcker interest rates.",
+      "date": "1/1/1985",
+      "fx": 220,
+      "fy": 780
+    },
+    {
+      "id": "7",
+      "labelProperty": "Savings & Loan Bank Crisis",
+      "date": "1/1/1986",
+      "fx": 280,
+      "fy": 750
+    },
+    {
+      "id": "8",
+      "labelProperty": "Fannie Mae introduces mortgage securitization to address imbalance in legacy and new interest rates.",
+      "date": "1/1/1985",
+      "fx": 550,
+      "fy": 780
+    },
+    {
+      "id": "9",
+      "labelProperty": "Abolition of fixed fees charged by wall street for trading stocks (1975).",
+      "date": "1/1/1975",
+      "fx": 400,
+      "fy": 980
+    },
+    {
+      "id": "10",
+      "labelProperty": "trading/research/investment banking combined",
+      "date": "1/1/1982",
+      "fx": 400,
+      "fy": 840
+    },
+    {
+      "id": "11",
+      "labelProperty": "Banking deregulation",
+      "date": "1/1/1988",
+      "fx": 300,
+      "fy": 600
+    }
+  ],
+  "links": [
+    {
+      "source": "1",
+      "target": "4"
+    },
+    {
+      "source": "3",
+      "target": "4"
+    },
+    {
+      "source": "4",
+      "target": "5"
+    },
+    {
+      "source": "5",
+      "target": "6"
+    },
+    {
+      "source": "6",
+      "target": "8"
+    },
+    {
+      "source": "6",
+      "target": "7"
+    },
+    {
+      "source": "7",
+      "target": "11"
+    },
+    {
+      "source": "9",
+      "target": "10"
+    }
+  ]
+}

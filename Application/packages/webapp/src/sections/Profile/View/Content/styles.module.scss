@@ -1,0 +1,107 @@
+.wrapper {
+  position: relative;
+
+  & > :global(.MuiGrid-item) {
+    padding: 25px;
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.photo:global(.MuiAvatar-root) {
+  width: 100%;
+  height: auto;
+  max-width: 272px;
+  margin-bottom: 40px;
+}
+
+h5.name {
+  margin-bottom: 12px;
+}
+
+p.career {
+  color: #757575;
+  margin-bottom: 12px;
+}
+
+p.overview {
+  margin-bottom: 24px;
+}
+
+.contact {
+  margin-bottom: 24px;
+
+  a {
+    font-size: 14px;
+    font-weight: 500;
+    color: #727272;
+
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+button.favoritesButton {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: initial;
+  opacity: 0.6;
+}
+
+h6.label {
+  line-height: 1.3;
+  color: rgba(117, 117, 117, 0.6);
+  margin-bottom: 8px;
+}
+
+.expertise {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.award {
+  font-size: 16px;
+  margin: 3px 0;
+}
+
+.workUrl {
+  font-size: 14px;
+  font-weight: 500;
+  color: #29b6f6;
+  margin: 3px 0;
+}
+
+.socials {
+  display: flex;
+
+  a + a {
+    margin-left: 10px;
+  }
+}
+
+ul.theories {
+  max-height: 550px;
+  overflow: auto;
+
+  li :global(.MuiListItemText-primary) {
+    font-size: 34px;
+    margin: 10px 0;
+    cursor: pointer;
+  }
+}
+
+.editButton {
+  position: absolute;
+  top: 26px;
+  right: -8px;
+  font-weight: bold;
+  color: #03a9f4;
+  text-transform: uppercase;
+}

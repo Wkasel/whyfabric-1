@@ -1,0 +1,9 @@
+/node_modules
+__generated__
+server/__generated__
+.gitignore
+.git
+/src/SxS-UI/**
+!.eslintrc
+/config/**
+next.config.js

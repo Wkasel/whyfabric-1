@@ -1,0 +1,104 @@
+.form {
+  max-width: 650px;
+  margin: auto;
+
+  &.disabled {
+    pointer-events: none;
+  }
+
+  :global {
+    .MuiTextField-root {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.field {
+  position: relative;
+  padding-left: 146px;
+  margin-bottom: 30px;
+}
+
+button.addButton {
+  position: absolute;
+  top: -18px;
+  left: 78px;
+
+  svg {
+    font-size: 38px;
+  }
+}
+
+.label {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgba(117, 117, 117, 0.6);
+  margin-bottom: 8px;
+}
+
+.avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+
+  :global {
+    .MuiAvatar-root {
+      width: 124px;
+      height: 124px;
+      margin-bottom: 12px;
+    }
+  }
+}
+
+h5.fullname {
+  margin-bottom: 8px;
+}
+
+.viewButton {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-weight: bold;
+  color: #03a9f4;
+  text-transform: uppercase;
+}
+
+.actions {
+  text-align: right;
+}
+
+.interests {
+  display: flex;
+  flex-wrap: wrap;
+
+  span {
+    margin-right: 25px;
+  }
+}
+
+.listItem {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+
+  svg {
+    font-size: 16px;
+    opacity: 0.5;
+    cursor: pointer;
+    margin-right: 12px;
+  }
+}
+
+.awards {
+  .listItem span {
+    font-weight: 500;
+  }
+}
+
+.works {
+  .listItem span {
+    font-weight: bold;
+    color: #03a9f4;
+  }
+}

@@ -1,0 +1,11 @@
+.new_theory_container {
+    /* display: flex;
+    justify-content: space-between; */
+    width: 100%;
+    padding: 80px 80px;
+}
+.new_theory_edit_container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}

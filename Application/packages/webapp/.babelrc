@@ -1,0 +1,107 @@
+{
+  "env": {
+    "development": {
+      "presets": ["next/babel"],
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "extensions": [".js", ".jsx"],
+            "alias": {
+              "*": "./src/",
+              "@theme": "./src/theme",
+              "@pages": "./src/pages",
+              "@components": "./src/components",
+              "@sections": "./src/sections",
+              "@form": "./src/components/Hoc/Form",
+              "@fields": "./src/components/HoC/Form/Fields",
+              "@i18n": "./src/i18n",
+              "@server": "./src/server",
+              "@util": "./src/util",
+              "@config": "./config",
+              "@static": "./static",
+              "@graphql": "./src/graphql",
+              "@sxs": "./src/SxS-Ui",
+              "@data": "./src/data",
+              "@theme/*": "./src/theme/*",
+              "@pages/*": "./src/pages/*",
+              "@components/*": "./src/components/*",
+              "@sections/*": "./src/sections/*",
+              "@form/*": "./src/components/Hoc/Form/*",
+              "@fields/*": "./src/components/HoC/Form/Fields/*",
+              "@i18n/*": "./src/i18n/*",
+              "@server/*": "./src/server/*",
+              "@util/*": "./src/util/*",
+              "@config/*": "./config/*",
+              "@static/*": "./static/*",
+              "@graphql/*": "./src/data/graphql/*",
+              "@sxs/*": "./src/SxS-Ui/*",
+              "@data/*": "./src/data/*"
+            }
+          }
+        ],
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        ["styled-components", { "ssr": true }],
+        [
+          "@babel/plugin-transform-runtime",
+          {
+            "absoluteRuntime": false,
+            "corejs": false,
+            "helpers": true,
+            "regenerator": true,
+            "useESModules": false,
+            "version": "7.0.0-beta.0"
+          }
+        ]
+      ]
+    },
+    "production": {
+      "presets": ["next/babel"],
+      "plugins": [
+        [
+          "module-resolver",
+          {
+            "root": ["./"],
+            "extensions": [".js", ".jsx", ".ts", ".tsx"],
+            "alias": {
+              "*": "./src/",
+              "@theme": "./src/theme",
+              "@pages": "./src/pages",
+              "@components": "./src/components",
+              "@sections": "./src/sections",
+              "@form": "./src/components/Hoc/Form",
+              "@fields": "./src/components/HoC/Form/Fields",
+              "@i18n": "./src/i18n",
+              "@server": "./src/server",
+              "@util": "./src/util",
+              "@config": "./config",
+              "@static": "./static",
+              "@graphql": "./src/graphql",
+              "@sxs": "./src/SxS-Ui",
+              "@data": "./src/data",
+              "@theme/*": "./src/theme/*",
+              "@pages/*": "./src/pages/*",
+              "@components/*": "./src/components/*",
+              "@sections/*": "./src/sections/*",
+              "@form/*": "./src/components/Hoc/Form/*",
+              "@fields/*": "./src/components/HoC/Form/Fields/*",
+              "@i18n/*": "./src/i18n/*",
+              "@server/*": "./src/server/*",
+              "@util/*": "./src/util/*",
+              "@config/*": "./config/*",
+              "@static/*": "./static/*",
+              "@graphql/*": "./src/data/graphql/*",
+              "@sxs/*": "./src/SxS-Ui/*",
+              "@data/*": "./src/data/*"
+            }
+          }
+        ],
+        ["@babel/plugin-proposal-decorators", { "legacy": true }],
+        ["@babel/plugin-proposal-class-properties", { "loose": true }],
+        ["styled-components", { "ssr": true }]
+      ]
+    }
+  }
+}

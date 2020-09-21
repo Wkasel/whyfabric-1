@@ -1,0 +1,90 @@
+[
+  {
+    "data": {
+      "id": 13,
+      "labels": [
+        {
+          "height": 80,
+          "width": 200,
+          "text": "UK files Article 50, beginning the process to leave the European Union (Brexit)"
+        }
+      ],
+      "date": "2017-03-29T07:00:00.000Z"
+    },
+    "group": "nodes",
+    "removed": false,
+    "selected": false,
+    "selectable": true,
+    "locked": false,
+    "grabbable": true,
+    "classes": ""
+  },
+  {
+    "data": {
+      "id": 12,
+      "labels": [
+        {
+          "height": 80,
+          "width": 200,
+          "text": "Majority of British public vote to leave the EU"
+        }
+      ],
+      "date": "2016-06-23T07:00:00.000Z"
+    },
+    "group": "nodes",
+    "removed": false,
+    "selected": false,
+    "selectable": true,
+    "locked": false,
+    "grabbable": true,
+    "classes": ""
+  },
+  {
+    "data": {
+      "id": 6,
+      "labels": [
+        {
+          "height": 80,
+          "width": 200,
+          "text": "UKIP campaign exploits Paris terrorist attacks, influx of migrants to Europe and Turkey/EU membership discussions to stoke fears about immigration"
+        }
+      ],
+      "date": "2016-05-01T07:00:00.000Z"
+    },
+    "group": "nodes",
+    "removed": false,
+    "selected": false,
+    "selectable": true,
+    "locked": false,
+    "grabbable": true,
+    "classes": ""
+  },
+  {
+    "data": {
+      "id": 23,
+      "date": "2004-01-01T00:00:00.000Z"
+    },
+    "labels": [
+      {
+        "height": 80,
+        "width": 200,
+        "text": "UKIP wins 16% of UK vote in EU parliament"
+      }
+    ],
+    "label": {
+      "height": 80,
+      "width": 200,
+      "text": "UKIP wins 16% of UK vote in EU parliament"
+    },
+    "group": "nodes",
+    "removed": false,
+    "selected": false,
+    "selectable": true,
+    "locked": false,
+    "grabbable": true,
+    "classes": ""
+  },
+  { "data": { "source": 25, "target": 9 } },
+  { "data": { "source": 24, "target": 7 } },
+  { "data": { "source": 23, "target": 24 } }
+]

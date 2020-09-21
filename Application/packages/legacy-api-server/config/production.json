@@ -1,0 +1,12 @@
+{
+  "mongo_uri": "mongodb+srv://wf_dev:4oaISwfgbv7gzktu@whyfabric-fulltext-prod-kmkco.gcp.mongodb.net/whyfabric-v1-dev?retryWrites=true&w=majority",
+  "aws_access_key": "AKIAZFOXILWTRYXAH2N5",
+  "app_s3_bucket_name": "admin.whyfabric.com",
+  "app_secret_access_key": "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",
+  "dump_schema": "./schema.graphql node index.js",
+  "port": "4000",
+  "redis_password": "H9VYNCBIX7DA525IqKRzyPfIPFITWOf2",
+  "redis_endpoint": "redis-11625.c84.us-east-1-2.ec2.cloud.redislabs.com",
+  "redis_port": "11625",
+  "redis_db_name": "SignalTest"
+}

@@ -1,0 +1,112 @@
+{
+  "description": "Consequences of the Arab Israeli  6 Day War",
+  "voice_note": [],
+  "_id": "5dd75c9861a9026ba0eebe14",
+  "name": "6 Day War",
+  "category": "History",
+  "createdAt": "2019-11-22T03:57:12.656Z",
+  "updatedAt": "2019-11-22T03:57:31.206Z",
+  "events": [
+    {
+      "links": [""],
+      "files": [],
+      "voice_note": [],
+      "_id": "5dd75d0a61a9026ba0eebe16",
+      "theoryId": "5dd75c9861a9026ba0eebe14",
+      "name": "Palestinian militants destabilize Lebanon ",
+      "date": "1973",
+      "era": "BCE",
+      "hour": "",
+      "minute": "",
+      "format": "",
+      "impact": "1",
+      "eventType": "",
+      "isPassive": false,
+      "isActive": false,
+      "isExact": false,
+      "__v": 0,
+      "dateObj": {
+        "date": "1973-01-01T00:00:00.000Z",
+        "year": 1973,
+        "dateUTC": "Mon, 01 Jan 1973 00:00:00 GMT"
+      },
+      "id": "5dd75d0a61a9026ba0eebe16"
+    },
+    {
+      "links": [""],
+      "files": [],
+      "voice_note": [],
+      "_id": "5dd75d2c61a9026ba0eebe17",
+      "theoryId": "5dd75c9861a9026ba0eebe14",
+      "name": "Jordan evicts Palestinian Militants",
+      "date": "1971",
+      "era": "BCE",
+      "hour": "",
+      "minute": "",
+      "format": "",
+      "impact": "1",
+      "eventType": "",
+      "isPassive": false,
+      "isActive": false,
+      "isExact": false,
+      "__v": 0,
+      "dateObj": {
+        "date": "1971-01-01T00:00:00.000Z",
+        "year": 1971,
+        "dateUTC": "Fri, 01 Jan 1971 00:00:00 GMT"
+      },
+      "id": "5dd75d2c61a9026ba0eebe17"
+    },
+    {
+      "links": [""],
+      "files": [],
+      "voice_note": [],
+      "_id": "5dd75d4761a9026ba0eebe18",
+      "theoryId": "5dd75c9861a9026ba0eebe14",
+      "name": "Palestinian refugees flock to Jordan",
+      "date": "1968",
+      "era": "BCE",
+      "hour": "",
+      "minute": "",
+      "format": "",
+      "impact": "1",
+      "eventType": "",
+      "isPassive": false,
+      "isActive": false,
+      "isExact": false,
+      "__v": 0,
+      "dateObj": {
+        "date": "1968-01-01T00:00:00.000Z",
+        "year": 1968,
+        "dateUTC": "Mon, 01 Jan 1968 00:00:00 GMT"
+      },
+      "id": "5dd75d4761a9026ba0eebe18"
+    },
+    {
+      "links": [""],
+      "files": [],
+      "voice_note": [],
+      "_id": "5dd75d5e61a9026ba0eebe19",
+      "theoryId": "5dd75c9861a9026ba0eebe14",
+      "name": "Israel defeats Arab states in 6 day war",
+      "date": "1967",
+      "era": "BCE",
+      "hour": "",
+      "minute": "",
+      "format": "",
+      "impact": "1",
+      "eventType": "",
+      "isPassive": false,
+      "isActive": false,
+      "isExact": false,
+      "__v": 0,
+      "dateObj": {
+        "date": "1967-01-01T00:00:00.000Z",
+        "year": 1967,
+        "dateUTC": "Sun, 01 Jan 1967 00:00:00 GMT"
+      },
+      "id": "5dd75d5e61a9026ba0eebe19"
+    }
+  ],
+  "connections": []
+}

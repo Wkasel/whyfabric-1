@@ -1,0 +1,1285 @@
+directive @cacheControl(
+  maxAge: Int
+  scope: CacheControlScope
+) on FIELD_DEFINITION | OBJECT | INTERFACE
+
+type _ListAccess {
+  # Access Control settings for the currently logged in (or anonymous)
+  # user when performing 'create' operations.
+  # NOTE: 'create' can only return a Boolean.
+  # It is not possible to specify a declarative Where clause for this
+  # operation
+  create: Boolean
+  # Access Control settings for the currently logged in (or anonymous)
+  # user when performing 'read' operations.
+  read: JSON
+  # Access Control settings for the currently logged in (or anonymous)
+  # user when performing 'update' operations.
+  update: JSON
+  # Access Control settings for the currently logged in (or anonymous)
+  # user when performing 'delete' operations.
+  delete: JSON
+  # Access Control settings for the currently logged in (or anonymous)
+  # user when performing 'auth' operations.
+  auth: JSON
+}
+
+type _ListMeta {
+  # The Keystone List name
+  name: String
+  # Access control configuration for the currently authenticated
+  # request
+  access: _ListAccess
+  # Information on the generated GraphQL schema
+  schema: _ListSchema
+}
+
+type _ListSchema {
+  # The typename as used in GraphQL queries
+  type: String
+  # Top level GraphQL query names which either return this type, or
+  # provide aggregate information about this type
+  queries: [String]
+  # Information about fields on other types which return this type, or
+  # provide aggregate information about this type
+  relatedFields: [_ListSchemaRelatedFields]
+}
+
+type _ListSchemaRelatedFields {
+  # The typename as used in GraphQL queries
+  type: String
+  # A list of GraphQL field names
+  fields: [String]
+}
+
+type _QueryMeta {
+  count: Int
+}
+
+enum CacheControlScope {
+  PUBLIC
+  PRIVATE
+}
+
+input CategoriesCreateInput {
+  data: CategoryCreateInput
+}
+
+input CategoriesUpdateInput {
+  id: ID!
+  data: CategoryUpdateInput
+}
+
+#  A keystone list
+type Category {
+  # This virtual field will be resolved in one of the following ways (in this order):
+  #  1. Execution of 'labelResolver' set on the Category List config, or
+  #  2. As an alias to the field set on 'labelField' in the Category List config, or
+  #  3. As an alias to a 'name' field on the Category List (if one exists), or
+  #  4. As an alias to the 'id' field on the Category List.
+  _label_: String
+  id: ID
+  name: String
+  description: String
+  activeState: CategoryActiveStateType
+  updatedAt: DateTime
+  createdAt: DateTime
+  updatedBy: User
+  createdBy: User
+}
+
+enum CategoryActiveStateType {
+  active
+  deactivated
+}
+
+input CategoryCreateInput {
+  name: String
+  description: String
+  activeState: CategoryActiveStateType
+}
+
+input CategoryRelateToManyInput {
+  create: [CategoryCreateInput]
+  connect: [CategoryWhereUniqueInput]
+  disconnect: [CategoryWhereUniqueInput]
+  disconnectAll: Boolean
+}
+
+input CategoryUpdateInput {
+  name: String
+  description: String
+  activeState: CategoryActiveStateType
+}
+
+input CategoryWhereInput {
+  AND: [CategoryWhereInput]
+  OR: [CategoryWhereInput]
+  id: ID
+  id_not: ID
+  id_in: [ID]
+  id_not_in: [ID]
+  name: String
+  name_not: String
+  name_contains: String
+  name_not_contains: String
+  name_starts_with: String
+  name_not_starts_with: String
+  name_ends_with: String
+  name_not_ends_with: String
+  name_i: String
+  name_not_i: String
+  name_contains_i: String
+  name_not_contains_i: String
+  name_starts_with_i: String
+  name_not_starts_with_i: String
+  name_ends_with_i: String
+  name_not_ends_with_i: String
+  name_in: [String]
+  name_not_in: [String]
+  description: String
+  description_not: String
+  description_contains: String
+  description_not_contains: String
+  description_starts_with: String
+  description_not_starts_with: String
+  description_ends_with: String
+  description_not_ends_with: String
+  description_i: String
+  description_not_i: String
+  description_contains_i: String
+  description_not_contains_i: String
+  description_starts_with_i: String
+  description_not_starts_with_i: String
+  description_ends_with_i: String
+  description_not_ends_with_i: String
+  description_in: [String]
+  description_not_in: [String]
+  activeState: CategoryActiveStateType
+  activeState_not: CategoryActiveStateType
+  activeState_in: [CategoryActiveStateType]
+  activeState_not_in: [CategoryActiveStateType]
+  updatedAt: DateTime
+  updatedAt_not: DateTime
+  updatedAt_lt: DateTime
+  updatedAt_lte: DateTime
+  updatedAt_gt: DateTime
+  updatedAt_gte: DateTime
+  updatedAt_in: [DateTime]
+  updatedAt_not_in: [DateTime]
+  createdAt: DateTime
+  createdAt_not: DateTime
+  createdAt_lt: DateTime
+  createdAt_lte: DateTime
+  createdAt_gt: DateTime
+  createdAt_gte: DateTime
+  createdAt_in: [DateTime]
+  createdAt_not_in: [DateTime]
+  updatedBy: UserWhereInput
+  updatedBy_is_null: Boolean
+  createdBy: UserWhereInput
+  createdBy_is_null: Boolean
+}
+
+input CategoryWhereUniqueInput {
+  id: ID!
+}
+
+#  A keystone list
+type Connection {
+  # This virtual field will be resolved in one of the following ways (in this order):
+  #  1. Execution of 'labelResolver' set on the Connection List config, or
+  #  2. As an alias to the field set on 'labelField' in the Connection List config, or
+  #  3. As an alias to a 'name' field on the Connection List (if one exists), or
+  #  4. As an alias to the 'id' field on the Connection List.
+  _label_: String
+  id: ID
+  theory: Theory
+  start: Event
+  end: Event
+  justification: String
+}
+
+input ConnectionCreateInput {
+  theory: TheoryRelateToOneInput
+  start: EventRelateToOneInput
+  end: EventRelateToOneInput
+  justification: String
+}
+
+input ConnectionRelateToManyInput {
+  create: [ConnectionCreateInput]
+  connect: [ConnectionWhereUniqueInput]
+  disconnect: [ConnectionWhereUniqueInput]
+  disconnectAll: Boolean
+}
+
+input ConnectionsCreateInput {
+  data: ConnectionCreateInput
+}
+
+input ConnectionsUpdateInput {
+  id: ID!
+  data: ConnectionUpdateInput
+}
+
+input ConnectionUpdateInput {
+  theory: TheoryRelateToOneInput
+  start: EventRelateToOneInput
+  end: EventRelateToOneInput
+  justification: String
+}
+
+input ConnectionWhereInput {
+  AND: [ConnectionWhereInput]
+  OR: [ConnectionWhereInput]
+  id: ID
+  id_not: ID
+  id_in: [ID]
+  id_not_in: [ID]
+  theory: TheoryWhereInput
+  theory_is_null: Boolean
+  start: EventWhereInput
+  start_is_null: Boolean
+  end: EventWhereInput
+  end_is_null: Boolean
+  justification: String
+  justification_not: String
+  justification_contains: String
+  justification_not_contains: String
+  justification_starts_with: String
+  justification_not_starts_with: String
+  justification_ends_with: String
+  justification_not_ends_with: String
+  justification_i: String
+  justification_not_i: String
+  justification_contains_i: String
+  justification_not_contains_i: String
+  justification_starts_with_i: String
+  justification_not_starts_with_i: String
+  justification_ends_with_i: String
+  justification_not_ends_with_i: String
+  justification_in: [String]
+  justification_not_in: [String]
+}
+
+input ConnectionWhereUniqueInput {
+  id: ID!
+}
+
+# DateTime custom scalar represents an ISO 8601 datetime string
+scalar DateTime
+
+#  A keystone list
+type Event {
+  # This virtual field will be resolved in one of the following ways (in this order):
+  #  1. Execution of 'labelResolver' set on the Event List config, or
+  #  2. As an alias to the field set on 'labelField' in the Event List config, or
+  #  3. As an alias to a 'name' field on the Event List (if one exists), or
+  #  4. As an alias to the 'id' field on the Event List.
+  _label_: String
+  id: ID
+  name: String
+  description: String
+  date: DateTime
+  sequence: Int
+  syncedEvents(
+    where: EventWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): [Event]
+  _syncedEventsMeta(
+    where: EventWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): _QueryMeta
+  isAproximate: Boolean
+  isApex: Boolean
+  isActive: Boolean
+  isPassive: Boolean
+  updatedAt: DateTime
+  createdAt: DateTime
+  updatedBy: User
+  createdBy: User
+}
+
+input EventCreateInput {
+  name: String
+  description: String
+  date: DateTime
+  sequence: Int
+  syncedEvents: EventRelateToManyInput
+  isAproximate: Boolean
+  isApex: Boolean
+  isActive: Boolean
+  isPassive: Boolean
+}
+
+input EventRelateToManyInput {
+  create: [EventCreateInput]
+  connect: [EventWhereUniqueInput]
+  disconnect: [EventWhereUniqueInput]
+  disconnectAll: Boolean
+}
+
+input EventRelateToOneInput {
+  create: EventCreateInput
+  connect: EventWhereUniqueInput
+  disconnect: EventWhereUniqueInput
+  disconnectAll: Boolean
+}
+
+input EventsCreateInput {
+  data: EventCreateInput
+}
+
+input EventsUpdateInput {
+  id: ID!
+  data: EventUpdateInput
+}
+
+input EventUpdateInput {
+  name: String
+  description: String
+  date: DateTime
+  sequence: Int
+  syncedEvents: EventRelateToManyInput
+  isAproximate: Boolean
+  isApex: Boolean
+  isActive: Boolean
+  isPassive: Boolean
+}
+
+input EventWhereInput {
+  AND: [EventWhereInput]
+  OR: [EventWhereInput]
+  id: ID
+  id_not: ID
+  id_in: [ID]
+  id_not_in: [ID]
+  name: String
+  name_not: String
+  name_contains: String
+  name_not_contains: String
+  name_starts_with: String
+  name_not_starts_with: String
+  name_ends_with: String
+  name_not_ends_with: String
+  name_i: String
+  name_not_i: String
+  name_contains_i: String
+  name_not_contains_i: String
+  name_starts_with_i: String
+  name_not_starts_with_i: String
+  name_ends_with_i: String
+  name_not_ends_with_i: String
+  name_in: [String]
+  name_not_in: [String]
+  description: String
+  description_not: String
+  description_contains: String
+  description_not_contains: String
+  description_starts_with: String
+  description_not_starts_with: String
+  description_ends_with: String
+  description_not_ends_with: String
+  description_i: String
+  description_not_i: String
+  description_contains_i: String
+  description_not_contains_i: String
+  description_starts_with_i: String
+  description_not_starts_with_i: String
+  description_ends_with_i: String
+  description_not_ends_with_i: String
+  description_in: [String]
+  description_not_in: [String]
+  date: DateTime
+  date_not: DateTime
+  date_lt: DateTime
+  date_lte: DateTime
+  date_gt: DateTime
+  date_gte: DateTime
+  date_in: [DateTime]
+  date_not_in: [DateTime]
+  sequence: Int
+  sequence_not: Int
+  sequence_lt: Int
+  sequence_lte: Int
+  sequence_gt: Int
+  sequence_gte: Int
+  sequence_in: [Int]
+  sequence_not_in: [Int]
+  #  condition must be true for all nodes
+  syncedEvents_every: EventWhereInput
+  #  condition must be true for at least 1 node
+  syncedEvents_some: EventWhereInput
+  #  condition must be false for all nodes
+  syncedEvents_none: EventWhereInput
+  #  is the relation field null
+  syncedEvents_is_null: Boolean
+  isAproximate: Boolean
+  isAproximate_not: Boolean
+  isApex: Boolean
+  isApex_not: Boolean
+  isActive: Boolean
+  isActive_not: Boolean
+  isPassive: Boolean
+  isPassive_not: Boolean
+  updatedAt: DateTime
+  updatedAt_not: DateTime
+  updatedAt_lt: DateTime
+  updatedAt_lte: DateTime
+  updatedAt_gt: DateTime
+  updatedAt_gte: DateTime
+  updatedAt_in: [DateTime]
+  updatedAt_not_in: [DateTime]
+  createdAt: DateTime
+  createdAt_not: DateTime
+  createdAt_lt: DateTime
+  createdAt_lte: DateTime
+  createdAt_gt: DateTime
+  createdAt_gte: DateTime
+  createdAt_in: [DateTime]
+  createdAt_not_in: [DateTime]
+  updatedBy: UserWhereInput
+  updatedBy_is_null: Boolean
+  createdBy: UserWhereInput
+  createdBy_is_null: Boolean
+}
+
+input EventWhereUniqueInput {
+  id: ID!
+}
+
+type File {
+  id: ID
+  path: String
+  filename: String
+  originalFilename: String
+  mimetype: String
+  encoding: String
+  publicUrl: String
+}
+
+# The `JSON` scalar type represents JSON values as specified by [ECMA-404](http://www.ecma-international.org/publications/files/ECMA-ST/ECMA-404.pdf).
+scalar JSON
+
+type Mutation {
+  #  Create a single Category item.
+  createCategory(data: CategoryCreateInput): Category
+  #  Create multiple Category items.
+  createCategories(data: [CategoriesCreateInput]): [Category]
+  #  Update a single Category item by ID.
+  updateCategory(id: ID!, data: CategoryUpdateInput): Category
+  #  Update multiple Category items by ID.
+  updateCategories(data: [CategoriesUpdateInput]): [Category]
+  #  Delete a single Category item by ID.
+  deleteCategory(id: ID!): Category
+  #  Delete multiple Category items by ID.
+  deleteCategories(ids: [ID!]): [Category]
+  #  Create a single Connection item.
+  createConnection(data: ConnectionCreateInput): Connection
+  #  Create multiple Connection items.
+  createConnections(data: [ConnectionsCreateInput]): [Connection]
+  #  Update a single Connection item by ID.
+  updateConnection(id: ID!, data: ConnectionUpdateInput): Connection
+  #  Update multiple Connection items by ID.
+  updateConnections(data: [ConnectionsUpdateInput]): [Connection]
+  #  Delete a single Connection item by ID.
+  deleteConnection(id: ID!): Connection
+  #  Delete multiple Connection items by ID.
+  deleteConnections(ids: [ID!]): [Connection]
+  #  Create a single Event item.
+  createEvent(data: EventCreateInput): Event
+  #  Create multiple Event items.
+  createEvents(data: [EventsCreateInput]): [Event]
+  #  Update a single Event item by ID.
+  updateEvent(id: ID!, data: EventUpdateInput): Event
+  #  Update multiple Event items by ID.
+  updateEvents(data: [EventsUpdateInput]): [Event]
+  #  Delete a single Event item by ID.
+  deleteEvent(id: ID!): Event
+  #  Delete multiple Event items by ID.
+  deleteEvents(ids: [ID!]): [Event]
+  #  Create a single Organization item.
+  createOrganization(data: OrganizationCreateInput): Organization
+  #  Create multiple Organization items.
+  createOrganizations(data: [OrganizationsCreateInput]): [Organization]
+  #  Update a single Organization item by ID.
+  updateOrganization(id: ID!, data: OrganizationUpdateInput): Organization
+  #  Update multiple Organization items by ID.
+  updateOrganizations(data: [OrganizationsUpdateInput]): [Organization]
+  #  Delete a single Organization item by ID.
+  deleteOrganization(id: ID!): Organization
+  #  Delete multiple Organization items by ID.
+  deleteOrganizations(ids: [ID!]): [Organization]
+  #  Create a single Theory item.
+  createTheory(data: TheoryCreateInput): Theory
+  #  Create multiple Theory items.
+  createTheories(data: [TheoriesCreateInput]): [Theory]
+  #  Update a single Theory item by ID.
+  updateTheory(id: ID!, data: TheoryUpdateInput): Theory
+  #  Update multiple Theory items by ID.
+  updateTheories(data: [TheoriesUpdateInput]): [Theory]
+  #  Delete a single Theory item by ID.
+  deleteTheory(id: ID!): Theory
+  #  Delete multiple Theory items by ID.
+  deleteTheories(ids: [ID!]): [Theory]
+  #  Create a single User item.
+  createUser(data: UserCreateInput): User
+  #  Create multiple User items.
+  createUsers(data: [UsersCreateInput]): [User]
+  #  Update a single User item by ID.
+  updateUser(id: ID!, data: UserUpdateInput): User
+  #  Update multiple User items by ID.
+  updateUsers(data: [UsersUpdateInput]): [User]
+  #  Delete a single User item by ID.
+  deleteUser(id: ID!): User
+  #  Delete multiple User items by ID.
+  deleteUsers(ids: [ID!]): [User]
+}
+
+#  A keystone list
+type Organization {
+  # This virtual field will be resolved in one of the following ways (in this order):
+  #  1. Execution of 'labelResolver' set on the Organization List config, or
+  #  2. As an alias to the field set on 'labelField' in the Organization List config, or
+  #  3. As an alias to a 'name' field on the Organization List (if one exists), or
+  #  4. As an alias to the 'id' field on the Organization List.
+  _label_: String
+  id: ID
+  name: String
+  website: String
+  about: String
+  updatedAt: DateTime
+  createdAt: DateTime
+  updatedBy: User
+  createdBy: User
+}
+
+input OrganizationCreateInput {
+  name: String
+  website: String
+  about: String
+}
+
+input OrganizationRelateToManyInput {
+  create: [OrganizationCreateInput]
+  connect: [OrganizationWhereUniqueInput]
+  disconnect: [OrganizationWhereUniqueInput]
+  disconnectAll: Boolean
+}
+
+input OrganizationsCreateInput {
+  data: OrganizationCreateInput
+}
+
+input OrganizationsUpdateInput {
+  id: ID!
+  data: OrganizationUpdateInput
+}
+
+input OrganizationUpdateInput {
+  name: String
+  website: String
+  about: String
+}
+
+input OrganizationWhereInput {
+  AND: [OrganizationWhereInput]
+  OR: [OrganizationWhereInput]
+  id: ID
+  id_not: ID
+  id_in: [ID]
+  id_not_in: [ID]
+  name: String
+  name_not: String
+  name_contains: String
+  name_not_contains: String
+  name_starts_with: String
+  name_not_starts_with: String
+  name_ends_with: String
+  name_not_ends_with: String
+  name_i: String
+  name_not_i: String
+  name_contains_i: String
+  name_not_contains_i: String
+  name_starts_with_i: String
+  name_not_starts_with_i: String
+  name_ends_with_i: String
+  name_not_ends_with_i: String
+  name_in: [String]
+  name_not_in: [String]
+  website: String
+  website_not: String
+  website_contains: String
+  website_not_contains: String
+  website_starts_with: String
+  website_not_starts_with: String
+  website_ends_with: String
+  website_not_ends_with: String
+  website_i: String
+  website_not_i: String
+  website_contains_i: String
+  website_not_contains_i: String
+  website_starts_with_i: String
+  website_not_starts_with_i: String
+  website_ends_with_i: String
+  website_not_ends_with_i: String
+  website_in: [String]
+  website_not_in: [String]
+  about: String
+  about_not: String
+  about_contains: String
+  about_not_contains: String
+  about_starts_with: String
+  about_not_starts_with: String
+  about_ends_with: String
+  about_not_ends_with: String
+  about_i: String
+  about_not_i: String
+  about_contains_i: String
+  about_not_contains_i: String
+  about_starts_with_i: String
+  about_not_starts_with_i: String
+  about_ends_with_i: String
+  about_not_ends_with_i: String
+  about_in: [String]
+  about_not_in: [String]
+  updatedAt: DateTime
+  updatedAt_not: DateTime
+  updatedAt_lt: DateTime
+  updatedAt_lte: DateTime
+  updatedAt_gt: DateTime
+  updatedAt_gte: DateTime
+  updatedAt_in: [DateTime]
+  updatedAt_not_in: [DateTime]
+  createdAt: DateTime
+  createdAt_not: DateTime
+  createdAt_lt: DateTime
+  createdAt_lte: DateTime
+  createdAt_gt: DateTime
+  createdAt_gte: DateTime
+  createdAt_in: [DateTime]
+  createdAt_not_in: [DateTime]
+  updatedBy: UserWhereInput
+  updatedBy_is_null: Boolean
+  createdBy: UserWhereInput
+  createdBy_is_null: Boolean
+}
+
+input OrganizationWhereUniqueInput {
+  id: ID!
+}
+
+type Query {
+  #  Search for all Category items which match the where clause.
+  allCategories(
+    where: CategoryWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): [Category]
+  #  Search for the Category item with the matching ID.
+  Category(where: CategoryWhereUniqueInput!): Category
+  #  Perform a meta-query on all Category items which match the where clause.
+  _allCategoriesMeta(
+    where: CategoryWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): _QueryMeta
+  #  Retrieve the meta-data for the Category list.
+  _CategoriesMeta: _ListMeta
+  #  Search for all Connection items which match the where clause.
+  allConnections(
+    where: ConnectionWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): [Connection]
+  #  Search for the Connection item with the matching ID.
+  Connection(where: ConnectionWhereUniqueInput!): Connection
+  #  Perform a meta-query on all Connection items which match the where clause.
+  _allConnectionsMeta(
+    where: ConnectionWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): _QueryMeta
+  #  Retrieve the meta-data for the Connection list.
+  _ConnectionsMeta: _ListMeta
+  #  Search for all Event items which match the where clause.
+  allEvents(
+    where: EventWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): [Event]
+  #  Search for the Event item with the matching ID.
+  Event(where: EventWhereUniqueInput!): Event
+  #  Perform a meta-query on all Event items which match the where clause.
+  _allEventsMeta(
+    where: EventWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): _QueryMeta
+  #  Retrieve the meta-data for the Event list.
+  _EventsMeta: _ListMeta
+  #  Search for all Organization items which match the where clause.
+  allOrganizations(
+    where: OrganizationWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): [Organization]
+  #  Search for the Organization item with the matching ID.
+  Organization(where: OrganizationWhereUniqueInput!): Organization
+  #  Perform a meta-query on all Organization items which match the where clause.
+  _allOrganizationsMeta(
+    where: OrganizationWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): _QueryMeta
+  #  Retrieve the meta-data for the Organization list.
+  _OrganizationsMeta: _ListMeta
+  #  Search for all Theory items which match the where clause.
+  allTheories(
+    where: TheoryWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): [Theory]
+  #  Search for the Theory item with the matching ID.
+  Theory(where: TheoryWhereUniqueInput!): Theory
+  #  Perform a meta-query on all Theory items which match the where clause.
+  _allTheoriesMeta(
+    where: TheoryWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): _QueryMeta
+  #  Retrieve the meta-data for the Theory list.
+  _TheoriesMeta: _ListMeta
+  #  Search for all User items which match the where clause.
+  allUsers(
+    where: UserWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): [User]
+  #  Search for the User item with the matching ID.
+  User(where: UserWhereUniqueInput!): User
+  #  Perform a meta-query on all User items which match the where clause.
+  _allUsersMeta(
+    where: UserWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): _QueryMeta
+  #  Retrieve the meta-data for the User list.
+  _UsersMeta: _ListMeta
+  # The version of the Keystone application serving this API.
+  appVersion: String
+  #  Retrieve the meta-data for all lists.
+  _ksListsMeta: [_ListMeta]
+}
+
+input TheoriesCreateInput {
+  data: TheoryCreateInput
+}
+
+input TheoriesUpdateInput {
+  id: ID!
+  data: TheoryUpdateInput
+}
+
+#  A keystone list
+type Theory {
+  # This virtual field will be resolved in one of the following ways (in this order):
+  #  1. Execution of 'labelResolver' set on the Theory List config, or
+  #  2. As an alias to the field set on 'labelField' in the Theory List config, or
+  #  3. As an alias to a 'name' field on the Theory List (if one exists), or
+  #  4. As an alias to the 'id' field on the Theory List.
+  _label_: String
+  id: ID
+  name: String
+  description: String
+  categories(
+    where: CategoryWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): [Category]
+  _categoriesMeta(
+    where: CategoryWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): _QueryMeta
+  events(
+    where: EventWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): [Event]
+  _eventsMeta(
+    where: EventWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): _QueryMeta
+  connections(
+    where: ConnectionWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): [Connection]
+  _connectionsMeta(
+    where: ConnectionWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): _QueryMeta
+  relatedTheories(
+    where: TheoryWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): [Theory]
+  _relatedTheoriesMeta(
+    where: TheoryWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): _QueryMeta
+  byDate: Boolean
+  bySequence: Boolean
+  updatedAt: DateTime
+  createdAt: DateTime
+  updatedBy: User
+  createdBy: User
+}
+
+input TheoryCreateInput {
+  name: String
+  description: String
+  categories: CategoryRelateToManyInput
+  events: EventRelateToManyInput
+  connections: ConnectionRelateToManyInput
+  relatedTheories: TheoryRelateToManyInput
+  byDate: Boolean
+  bySequence: Boolean
+}
+
+input TheoryRelateToManyInput {
+  create: [TheoryCreateInput]
+  connect: [TheoryWhereUniqueInput]
+  disconnect: [TheoryWhereUniqueInput]
+  disconnectAll: Boolean
+}
+
+input TheoryRelateToOneInput {
+  create: TheoryCreateInput
+  connect: TheoryWhereUniqueInput
+  disconnect: TheoryWhereUniqueInput
+  disconnectAll: Boolean
+}
+
+input TheoryUpdateInput {
+  name: String
+  description: String
+  categories: CategoryRelateToManyInput
+  events: EventRelateToManyInput
+  connections: ConnectionRelateToManyInput
+  relatedTheories: TheoryRelateToManyInput
+  byDate: Boolean
+  bySequence: Boolean
+}
+
+input TheoryWhereInput {
+  AND: [TheoryWhereInput]
+  OR: [TheoryWhereInput]
+  id: ID
+  id_not: ID
+  id_in: [ID]
+  id_not_in: [ID]
+  name: String
+  name_not: String
+  name_contains: String
+  name_not_contains: String
+  name_starts_with: String
+  name_not_starts_with: String
+  name_ends_with: String
+  name_not_ends_with: String
+  name_i: String
+  name_not_i: String
+  name_contains_i: String
+  name_not_contains_i: String
+  name_starts_with_i: String
+  name_not_starts_with_i: String
+  name_ends_with_i: String
+  name_not_ends_with_i: String
+  name_in: [String]
+  name_not_in: [String]
+  description: String
+  description_not: String
+  description_contains: String
+  description_not_contains: String
+  description_starts_with: String
+  description_not_starts_with: String
+  description_ends_with: String
+  description_not_ends_with: String
+  description_i: String
+  description_not_i: String
+  description_contains_i: String
+  description_not_contains_i: String
+  description_starts_with_i: String
+  description_not_starts_with_i: String
+  description_ends_with_i: String
+  description_not_ends_with_i: String
+  description_in: [String]
+  description_not_in: [String]
+  #  condition must be true for all nodes
+  categories_every: CategoryWhereInput
+  #  condition must be true for at least 1 node
+  categories_some: CategoryWhereInput
+  #  condition must be false for all nodes
+  categories_none: CategoryWhereInput
+  #  is the relation field null
+  categories_is_null: Boolean
+  #  condition must be true for all nodes
+  events_every: EventWhereInput
+  #  condition must be true for at least 1 node
+  events_some: EventWhereInput
+  #  condition must be false for all nodes
+  events_none: EventWhereInput
+  #  is the relation field null
+  events_is_null: Boolean
+  #  condition must be true for all nodes
+  connections_every: ConnectionWhereInput
+  #  condition must be true for at least 1 node
+  connections_some: ConnectionWhereInput
+  #  condition must be false for all nodes
+  connections_none: ConnectionWhereInput
+  #  is the relation field null
+  connections_is_null: Boolean
+  #  condition must be true for all nodes
+  relatedTheories_every: TheoryWhereInput
+  #  condition must be true for at least 1 node
+  relatedTheories_some: TheoryWhereInput
+  #  condition must be false for all nodes
+  relatedTheories_none: TheoryWhereInput
+  #  is the relation field null
+  relatedTheories_is_null: Boolean
+  byDate: Boolean
+  byDate_not: Boolean
+  bySequence: Boolean
+  bySequence_not: Boolean
+  updatedAt: DateTime
+  updatedAt_not: DateTime
+  updatedAt_lt: DateTime
+  updatedAt_lte: DateTime
+  updatedAt_gt: DateTime
+  updatedAt_gte: DateTime
+  updatedAt_in: [DateTime]
+  updatedAt_not_in: [DateTime]
+  createdAt: DateTime
+  createdAt_not: DateTime
+  createdAt_lt: DateTime
+  createdAt_lte: DateTime
+  createdAt_gt: DateTime
+  createdAt_gte: DateTime
+  createdAt_in: [DateTime]
+  createdAt_not_in: [DateTime]
+  updatedBy: UserWhereInput
+  updatedBy_is_null: Boolean
+  createdBy: UserWhereInput
+  createdBy_is_null: Boolean
+}
+
+input TheoryWhereUniqueInput {
+  id: ID!
+}
+
+# The `Upload` scalar type represents a file upload.
+scalar Upload
+
+#  A keystone list
+type User {
+  # This virtual field will be resolved in one of the following ways (in this order):
+  #  1. Execution of 'labelResolver' set on the User List config, or
+  #  2. As an alias to the field set on 'labelField' in the User List config, or
+  #  3. As an alias to a 'name' field on the User List (if one exists), or
+  #  4. As an alias to the 'id' field on the User List.
+  _label_: String
+  id: ID
+  name: String
+  email: String
+  biography: String
+  organizations(
+    where: OrganizationWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): [Organization]
+  _organizationsMeta(
+    where: OrganizationWhereInput
+    search: String
+    orderBy: String
+    first: Int
+    skip: Int
+  ): _QueryMeta
+  referredBy: User
+  isAdmin: Boolean
+  isSME: Boolean
+  requestedSME: Boolean
+  activeState: UserActiveStateType
+  city: String
+  country: String
+  password_is_set: Boolean
+  photo: File
+  lastLogin: String
+  updatedAt: DateTime
+  createdAt: DateTime
+}
+
+enum UserActiveStateType {
+  active
+  deactivated
+}
+
+input UserCreateInput {
+  name: String
+  email: String
+  biography: String
+  organizations: OrganizationRelateToManyInput
+  referredBy: UserRelateToOneInput
+  isAdmin: Boolean
+  isSME: Boolean
+  requestedSME: Boolean
+  activeState: UserActiveStateType
+  city: String
+  country: String
+  password: String
+  photo: Upload
+  lastLogin: String
+}
+
+input UserRelateToOneInput {
+  create: UserCreateInput
+  connect: UserWhereUniqueInput
+  disconnect: UserWhereUniqueInput
+  disconnectAll: Boolean
+}
+
+input UsersCreateInput {
+  data: UserCreateInput
+}
+
+input UsersUpdateInput {
+  id: ID!
+  data: UserUpdateInput
+}
+
+input UserUpdateInput {
+  name: String
+  email: String
+  biography: String
+  organizations: OrganizationRelateToManyInput
+  referredBy: UserRelateToOneInput
+  isAdmin: Boolean
+  isSME: Boolean
+  requestedSME: Boolean
+  activeState: UserActiveStateType
+  city: String
+  country: String
+  password: String
+  photo: Upload
+  lastLogin: String
+}
+
+input UserWhereInput {
+  AND: [UserWhereInput]
+  OR: [UserWhereInput]
+  id: ID
+  id_not: ID
+  id_in: [ID]
+  id_not_in: [ID]
+  name: String
+  name_not: String
+  name_contains: String
+  name_not_contains: String
+  name_starts_with: String
+  name_not_starts_with: String
+  name_ends_with: String
+  name_not_ends_with: String
+  name_i: String
+  name_not_i: String
+  name_contains_i: String
+  name_not_contains_i: String
+  name_starts_with_i: String
+  name_not_starts_with_i: String
+  name_ends_with_i: String
+  name_not_ends_with_i: String
+  name_in: [String]
+  name_not_in: [String]
+  email: String
+  email_not: String
+  email_contains: String
+  email_not_contains: String
+  email_starts_with: String
+  email_not_starts_with: String
+  email_ends_with: String
+  email_not_ends_with: String
+  email_i: String
+  email_not_i: String
+  email_contains_i: String
+  email_not_contains_i: String
+  email_starts_with_i: String
+  email_not_starts_with_i: String
+  email_ends_with_i: String
+  email_not_ends_with_i: String
+  email_in: [String]
+  email_not_in: [String]
+  biography: String
+  biography_not: String
+  biography_contains: String
+  biography_not_contains: String
+  biography_starts_with: String
+  biography_not_starts_with: String
+  biography_ends_with: String
+  biography_not_ends_with: String
+  biography_i: String
+  biography_not_i: String
+  biography_contains_i: String
+  biography_not_contains_i: String
+  biography_starts_with_i: String
+  biography_not_starts_with_i: String
+  biography_ends_with_i: String
+  biography_not_ends_with_i: String
+  biography_in: [String]
+  biography_not_in: [String]
+  #  condition must be true for all nodes
+  organizations_every: OrganizationWhereInput
+  #  condition must be true for at least 1 node
+  organizations_some: OrganizationWhereInput
+  #  condition must be false for all nodes
+  organizations_none: OrganizationWhereInput
+  #  is the relation field null
+  organizations_is_null: Boolean
+  referredBy: UserWhereInput
+  referredBy_is_null: Boolean
+  isAdmin: Boolean
+  isAdmin_not: Boolean
+  isSME: Boolean
+  isSME_not: Boolean
+  requestedSME: Boolean
+  requestedSME_not: Boolean
+  activeState: UserActiveStateType
+  activeState_not: UserActiveStateType
+  activeState_in: [UserActiveStateType]
+  activeState_not_in: [UserActiveStateType]
+  city: String
+  city_not: String
+  city_contains: String
+  city_not_contains: String
+  city_starts_with: String
+  city_not_starts_with: String
+  city_ends_with: String
+  city_not_ends_with: String
+  city_i: String
+  city_not_i: String
+  city_contains_i: String
+  city_not_contains_i: String
+  city_starts_with_i: String
+  city_not_starts_with_i: String
+  city_ends_with_i: String
+  city_not_ends_with_i: String
+  city_in: [String]
+  city_not_in: [String]
+  country: String
+  country_not: String
+  country_contains: String
+  country_not_contains: String
+  country_starts_with: String
+  country_not_starts_with: String
+  country_ends_with: String
+  country_not_ends_with: String
+  country_i: String
+  country_not_i: String
+  country_contains_i: String
+  country_not_contains_i: String
+  country_starts_with_i: String
+  country_not_starts_with_i: String
+  country_ends_with_i: String
+  country_not_ends_with_i: String
+  country_in: [String]
+  country_not_in: [String]
+  password_is_set: Boolean
+  photo: String
+  photo_not: String
+  photo_contains: String
+  photo_not_contains: String
+  photo_starts_with: String
+  photo_not_starts_with: String
+  photo_ends_with: String
+  photo_not_ends_with: String
+  photo_in: [String]
+  photo_not_in: [String]
+  lastLogin: String
+  lastLogin_not: String
+  lastLogin_lt: String
+  lastLogin_lte: String
+  lastLogin_gt: String
+  lastLogin_gte: String
+  lastLogin_in: [String]
+  lastLogin_not_in: [String]
+  updatedAt: DateTime
+  updatedAt_not: DateTime
+  updatedAt_lt: DateTime
+  updatedAt_lte: DateTime
+  updatedAt_gt: DateTime
+  updatedAt_gte: DateTime
+  updatedAt_in: [DateTime]
+  updatedAt_not_in: [DateTime]
+  createdAt: DateTime
+  createdAt_not: DateTime
+  createdAt_lt: DateTime
+  createdAt_lte: DateTime
+  createdAt_gt: DateTime
+  createdAt_gte: DateTime
+  createdAt_in: [DateTime]
+  createdAt_not_in: [DateTime]
+}
+
+input UserWhereUniqueInput {
+  id: ID!
+}

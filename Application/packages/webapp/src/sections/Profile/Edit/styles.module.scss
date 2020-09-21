@@ -1,0 +1,29 @@
+.formWrapper {
+  padding: 85px 40px;
+}
+
+.favoritesWrapper {
+  display: flex;
+  align-items: flex-start;
+  padding: 85px;
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+
+.switch {
+  & :global(.MuiFormControlLabel-label) {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(117, 117, 117, 0.6);
+  }
+}
+
+@media (max-width: 768px) {
+  .formWrapper {
+    padding: 40px;
+  }
+
+  .favoritesWrapper {
+    padding: 40px;
+  }
+}

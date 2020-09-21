@@ -1,0 +1,4 @@
+{
+  "extends": ["@whyfabric/eslint-config-whyfabric/typescript"],
+  "rules": {}
+}

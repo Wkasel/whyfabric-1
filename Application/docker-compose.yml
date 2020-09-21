@@ -1,0 +1,68 @@
+# *********************************
+#
+#      WHYFABRIC DEVELOPMENT ENV
+#      --------------------------
+#
+# **********************************
+
+version: "3.8"
+services:
+  wf-webapp:
+    container_name: wf-webapp
+    build:
+      context: ./packages/webapp
+      dockerfile: Dockerfile.localdev
+    image: whyfabric-webapp-dev:latest
+    ports:
+      - "3000:3000"
+    expose:
+      - "3000"
+    volumes:
+      - ./packages/webapp:/app
+    working_dir: /app
+    networks:
+      - whyfab-dev
+networks:
+  whyfab-dev:
+    driver: bridge
+volumes:
+  wf-webapp:
+  #
+  # Left for legacy testing of any old app components
+  # database:
+  #   image: "mongo"
+  #   container_name: "whyfabric-mongodb"
+  #   environment:
+  #     - MONGO_INITDB_DATABASE=${DEV_MONGO_DATABASE_NAME}
+  #     - MONGO_INITDB_ROOT_USERNAME=${DEV_MONGO_USERNAME}
+  #     - MONGO_INITDB_ROOT_PASSWORD=${DEV_MONGO_PASSWORD}
+  #   VOLUMES:
+  #     - ./scripts/init-mongo.js:/docker-entrypoint-initdb.d/init-mongo-js:ro
+  #     - ./mongo-volume:/data/db
+  #   ports:
+  #     - "27017:27017"
+  # api:
+  #   command: bash -c 'yarn && yarn dev'
+  #   container_name: api
+  #   expose:
+  #     - "3002"
+  #   image: node
+  #   ports:
+  #     - "3002:3000"
+  #   user: node
+  #   env_file: ./packages/api/.env
+  #   volumes:
+  #     - ./packages/api:/home/node/app
+  #   working_dir: /home/node/app
+  # shared:
+  #   command: bash -c 'npm i && npm run start'
+  #   container_name: shared
+  #   expose:
+  #     - "3003"
+  #   image: node
+  #   ports:
+  #     - "3003:8080"
+  #   user: node
+  #   volumes:
+  #     - ./packages/shared:/home/node/app
+  #   working_dir: /home/node/app

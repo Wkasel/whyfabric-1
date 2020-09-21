@@ -1,0 +1,20 @@
+# Specify Node version
+FROM node:lts-slim
+
+WORKDIR /app
+
+ENV NODE_ENV=development
+
+# Copy only required files for fetching dependencies
+COPY package.json /app/package.json
+COPY yarn.lock /app/yarn.lock
+
+RUN yarn
+
+# Set environment variables
+ENV PORT=3000
+
+# Start app
+CMD yarn dev
+
+EXPOSE 3000
